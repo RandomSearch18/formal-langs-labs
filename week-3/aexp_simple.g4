@@ -1,7 +1,7 @@
 grammar aexp_simple;
 
 aexp:
-	NUM
+	num
 	| '(' aexp ')'
 	| aexp '+' aexp
 	| aexp '*' aexp
@@ -9,7 +9,9 @@ aexp:
 	| '-' aexp
 	| '+' aexp;
 
-NUM: INT | REAL;
+num: INT | INT '.' INT;
+// real: INT '.' INT;
+
 INT: [0-9]+;
-REAL: [0-9]+ '.' [0-9]+;
+
 WS: [ \n\t\r] -> skip;
