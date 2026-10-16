@@ -5,9 +5,11 @@ aexp:
 	| '(' aexp ')'
 	| aexp '+' aexp
 	| aexp '*' aexp
-	| aexp '-' aexp;
+	| aexp '-' aexp
+	| '-' aexp
+	| '+' aexp;
 
-NUM: INT | FLOAT;
+NUM: INT | REAL;
 INT: [0-9]+;
-FLOAT: [0-9]+ '.' [0-9]+;
+REAL: [0-9]+ '.' [0-9]+;
 WS: [ \n\t\r] -> skip;
