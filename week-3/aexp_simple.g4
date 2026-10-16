@@ -5,9 +5,11 @@ aexp:
 	| '(' aexp ')'
 	| aexp '+' aexp
 	| aexp '*' aexp
+	| aexp '/' aexp
 	| aexp '-' aexp
 	| '-' aexp
-	| '+' aexp;
+	| '+' aexp
+	| 'max(' aexp ',' aexp ')';
 
 num: INT | INT '.' INT;
 // real: INT '.' INT;
