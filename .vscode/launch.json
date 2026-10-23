@@ -7,7 +7,7 @@
       "request": "launch",
       "input": "${fileDirname}/input.txt",
       "grammar": "${file}",
-      "startRule": "aexp",
+      "startRule": "list",
       "printParseTree": true,
       "visualParseTree": true
     }
