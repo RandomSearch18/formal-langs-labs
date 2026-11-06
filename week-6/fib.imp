@@ -1,0 +1,16 @@
+n := 4;
+
+i := 0;
+a_old := 0;
+a := 1;
+b := 1;
+
+n := n - 2;
+while i < n do
+  a_old := a;
+  a := b;
+  b := a_old + a;
+  i := i + 1;
+od;
+
+output := b;
