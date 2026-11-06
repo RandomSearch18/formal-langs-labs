@@ -1,0 +1,8 @@
+x := 5;
+y := 3;
+
+if x > y then
+  max := x;
+else
+  max := y;
+fi;
