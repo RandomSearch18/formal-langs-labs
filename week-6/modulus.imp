@@ -1,0 +1,8 @@
+x := 32;
+y := 10;
+
+while x > y do
+  x := x - y;
+od;
+
+remainder := x;
