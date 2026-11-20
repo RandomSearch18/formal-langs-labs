@@ -1,0 +1,12 @@
+x = 8
+y = 20
+
+while x != y:
+  if x > y:
+    x = x - y
+  else:
+    y = y - x
+
+
+
+print(x)

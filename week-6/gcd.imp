@@ -1,7 +1,7 @@
-x := 5;
-y := 10;
+x := 20;
+y := 8;
 
-while x - y > 0 do
+while x <> y do
   if x > y then
     x := x - y;
   else
